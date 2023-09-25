@@ -1,10 +1,90 @@
+:root {
+    --title-color: #212121;
+    --main-text-color: #757575;
+    --accent-color: #2196F3;
+    --bg-color: #2F303A;
+}
+
+ul {
+    list-style: none;
+}
+
 body {
 
 }
 
-:root {
-    --title-color: #212121;
-    --main-text-color: #757575;
-    --accent-color: #2196F3; 
+.title {
+    color: var(--title-color);
 }
 
+.subtitle {
+    color: var(--title-color);
+}
+
+/* header */
+
+.logo {
+    color: #000;
+}
+
+.logo span {
+    color: var(--accent-color);
+}
+
+.header-nav .menu-link {
+    color: var(--title-color);
+}
+
+.header-contacts .contacts-link {
+    color: var(--main-text-color);
+}
+
+.header-nav .menu-link:hover, .contacts-link:hover  {
+    color: var(--accent-color);
+}
+
+/* hero */
+
+.hero {
+    background-color: var(--bg-color);
+}
+
+.hero-title {
+    color: #fff;
+}
+
+.hero-button {
+    color: #fff;
+    background: var(--accent-color);
+}
+
+/* advantages */
+
+.advantages-subtitle {
+    color: var(--title-color);
+}
+
+.advantages-text {
+    color: var(--main-text-color);
+}
+
+/* team */
+
+
+.team-descr {
+    color: var(--main-text-color);
+}
+
+/* footer */
+
+footer {
+    background: var(--bg-color);
+}
+
+.footer-adress {
+    color: #fff;
+}
+
+.adress-item {
+    color: rgba(255, 255, 255, 0.60);
+}
