@@ -5,6 +5,19 @@
     --bg-color: #2F303A;
 }
 
+/* add font'Raleway'; */
+
+@font-face {
+    font-family: "Raleway";
+    src:
+        url("/fonts/Raleway/Raleway-Bold.woff2") format("woff2"),
+        url("/fonts/Raleway/Raleway-Bold.woff") format("woff");
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 ul {
     list-style: none;
 }
@@ -15,6 +28,11 @@ a {
 
 .title {
     color: var(--title-color);
+
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
 }
 
 .subtitle {
@@ -24,7 +42,13 @@ a {
 /* header */
 
 .logo {
+    font-family: 'Raleway', sans-serif;
+
     color: #000;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.78px;
 }
 
 .logo span {
@@ -33,6 +57,10 @@ a {
 
 .header-nav .menu-link {
     color: var(--title-color);
+
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
 }
 
 .header-contacts .contacts-link {
@@ -51,28 +79,71 @@ a {
 
 .hero-title {
     color: #fff;
+
+    text-align: center;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
 }
 
 .hero-button {
     color: #fff;
     background: var(--accent-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+    cursor: pointer;
+
+    width: 216px;
+    height: 50px;
+
+    border-radius: 4px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
+
 
 /* advantages */
 
 .advantages-subtitle {
     color: var(--title-color);
+
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
 }
 
 .advantages-text {
     color: var(--main-text-color);
+
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
 }
 
 /* team */
 
+.team-subtitle {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.48px;
+}
 
 .team-descr {
     color: var(--main-text-color);
+
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.48px;
 }
 
 /* footer */
@@ -81,12 +152,27 @@ footer {
     background: var(--bg-color);
 }
 
+.footer-logo {
+    color: #fff;
+}
+
 .footer-adress {
     color: #fff;
+
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: 0.42px;
 }
 
 .adress-item {
     color: rgba(255, 255, 255, 0.60);
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
 }
 
 /* gallery */
