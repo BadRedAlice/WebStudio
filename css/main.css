@@ -88,3 +88,9 @@ footer {
 .adress-item {
     color: rgba(255, 255, 255, 0.60);
 }
+
+/* gallery */
+
+.gallery-text {
+    color: var(--main-text-color);
+}
