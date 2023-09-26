@@ -9,10 +9,6 @@ ul {
     list-style: none;
 }
 
-body {
-
-}
-
 .title {
     color: var(--title-color);
 }
