@@ -12,81 +12,124 @@
 </head>
 <body>
     <header>
-        <nav class="header-nav">
-            <a class="logo" href="/"><span>Web</span>Studio</a>
-    
-            <ul class="header-menu">
-                <li class="menu-item"><a class="menu-link" href="#">Студія</a></li>
-                <li class="menu-item"><a class="menu-link" href="#">Портфоліо</a></li>
-                <li class="menu-item"><a class="menu-link" href="#">Контакти</a></li>
-            </ul>
-        </nav>
-    
-        <ul class="header-contacts">
-            <li class="contacts-item"><a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li class="contacts-item"><a class="contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+        <div class="container">
+            <div class="header-page">
+                <nav class="header-nav">
+                    <a class="logo" href="/"> <span>Web</span>Studio</a>
+        
+                    <ul class="header-menu">
+                        <li class="menu-item"><a class="menu-link" href="#">Студія</a></li>
+                        <li class="menu-item"><a class="menu-link" href="gallery.html">Портфоліо</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#">Контакти</a></li>
+                    </ul>
+                </nav>
+        
+                <ul class="header-contacts">
+                    <li class="contacts-item"><a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li class="contacts-item"><a class="contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
 
     <main>
-        <h1 class="gallery-title title"></h1>
+        <section class="gallery">
+            <div class="container">
+                <h1 class="gallery-title">
+                    Портфоліо
+                </h1>
+                <div class="gallery-filter">
+                    <ul class="filter-list">
+                        <li class="filter-item">Усі</li>
+                        <li class="filter-item">Веб-сайти</li>
+                        <li class="filter-item">Додатки</li>
+                        <li class="filter-item">Дизайн</li>
+                        <li class="filter-item">Маркетинг</li>
+                    </ul>
+                </div>
+                <div class="gallery-content">
+                    <h1 class="gallery-title title"></h1>
 
-        <ul class="gallery-list">
-            <li class="gallery-item">
-                <img class="gallery-image" src="images/gallery1.jpg" alt="проєкт Технокряк">
-                <h2 class="gallery-subtitle subtitle">Технокряк</h2>
-                <p class="gallery-text">Веб-сайт</p>
-            </li>
-            <li class="gallery-item">
-                <img class="gallery-image" src="images/gallery2.jpg" alt="баскетбол">
-                <h2 class="gallery-subtitle subtitle">Постер New Orlean vs Golden Star</h2>
-                <p class="gallery-text">Дизайн</p>
-            </li>
-            <li class="gallery-item">
-                <img class="gallery-image" src="images/gallery3.jpg" alt="логотип Seafood">
-                <h2 class="gallery-subtitle subtitle">Ресторан Seafood</h2>
-                <p class="gallery-text">Додаток</p>
-            </li>
-            <li class="gallery-item">
-                <img class="gallery-image" src="images/gallery4.jpg" alt="навушники">
-                <h2 class="gallery-subtitle subtitle">Проєкт Prime</h2>
-                <p class="gallery-text">Маркетинг</p>
-            </li>
-            <li class="gallery-item">
-                <img class="gallery-image" src="images/gallery5.jpg" alt="коробки">
-                <h2 class="gallery-subtitle subtitle">Проєкт Boxes</h2>
-                <p class="gallery-text">Додаток</p>
-            </li>
-            <li class="gallery-item">
-                <img class="gallery-image" src="images/gallery6.jpg" alt="монітор">
-                <h2 class="gallery-subtitle subtitle">Inspiration has no Borders</h2>
-                <p class="gallery-text">Веб-сайт</p>
-            </li>
-            <li class="gallery-item">
-                <img class="gallery-image" src="images/gallery7.jpg" alt="книга">
-                <h2 class="gallery-subtitle subtitle">Видання Limited Edition</h2>
-                <p class="gallery-text">Дизайн</p>
-            </li>
-            <li class="gallery-item">
-                <img class="gallery-image" src="images/gallery8.jpg" alt="бірка">
-                <h2 class="gallery-subtitle subtitle">Проєкт LAB</h2>
-                <p class="gallery-text">Маркетинг</p>
-            </li>
-            <li class="gallery-item">
-                <img class="gallery-image" src="images/gallery9.jpg" alt="ноутбук">
-                <h2 class="gallery-subtitle subtitle">Growing Business</h2>
-                <p class="gallery-text">Додаток</p>
-            </li>
-        </ul>
+                    <ul class="gallery-list">
+                        <li class="gallery-item">
+                            <img class="gallery-image" src="images/gallery1.jpg" alt="проєкт Технокряк">
+                            <div class="gallery-text">
+                                <h2 class="gallery-subtitle subtitle">Технокряк</h2>
+                                <p class="gallery-subtext">Веб-сайт</p>
+                            </div>
+                        </li>
+                        <li class="gallery-item">
+                            <img class="gallery-image" src="images/gallery2.jpg" alt="баскетбол">
+                            <div class="gallery-text">
+                                <h2 class="gallery-subtitle subtitle">Постер New Orlean vs Golden Star</h2>
+                                <p class="gallery-subtext">Дизайн</p>
+                            </div>
+                        </li>
+                        <li class="gallery-item">
+                            <img class="gallery-image" src="images/gallery3.jpg" alt="логотип Seafood">
+                            <div class="gallery-text">
+                                <h2 class="gallery-subtitle subtitle">Ресторан Seafood</h2>
+                                <p class="gallery-subtext">Додаток</p>
+                            </div>
+                        </li>
+                        <li class="gallery-item">
+                            <img class="gallery-image" src="images/gallery4.jpg" alt="навушники">
+                            <div class="gallery-text">
+                                <h2 class="gallery-subtitle subtitle">Проєкт Prime</h2>
+                                <p class="gallery-subtext">Маркетинг</p>
+                            </div>
+                        </li>
+                        <li class="gallery-item">
+                            <img class="gallery-image" src="images/gallery5.jpg" alt="коробки">
+                            <div class="gallery-text">
+                                <h2 class="gallery-subtitle subtitle">Проєкт Boxes</h2>
+                                <p class="gallery-subtext">Додаток</p>
+                            </div>
+                        </li>
+                        <li class="gallery-item">
+                            <img class="gallery-image" src="images/gallery6.jpg" alt="монітор">
+                            <div class="gallery-text">
+                                <h2 class="gallery-subtitle subtitle">Inspiration has no Borders</h2>
+                                <p class="gallery-subtext">Веб-сайт</p>
+                            </div>
+                        </li>
+                        <li class="gallery-item">
+                            <img class="gallery-image" src="images/gallery7.jpg" alt="книга">
+                            <div class="gallery-text">
+                                <h2 class="gallery-subtitle subtitle">Видання Limited Edition</h2>
+                                <p class="gallery-subtext">Дизайн</p>
+                            </div>
+                        </li>
+                        <li class="gallery-item">
+                            <img class="gallery-image" src="images/gallery8.jpg" alt="бірка">
+                            <div class="gallery-text">
+                                <h2 class="gallery-subtitle subtitle">Проєкт LAB</h2>
+                                <p class="gallery-subtext">Маркетинг</p>
+                            </div>
+                        </li>
+                        <li class="gallery-item">
+                            <img class="gallery-image" src="images/gallery9.jpg" alt="ноутбук">
+                            <div class="gallery-text">
+                                <h2 class="gallery-subtitle subtitle">Growing Business</h2>
+                                <p class="gallery-subtext">Додаток</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <a class="logo" href="/"><span>Web</span>Studio</a>
+       <div class="container">
+        <a class="logo footer-logo" href="/"><span>Web</span>Studio</a>
         <address class="footer-adress">
             м. Київ, пр-т Лесі Українки, 26
             <a class="adress-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
             <a class="adress-item" href="tel:+380961111111">+38 096 111 11 11</a>
         </address>
+       </div>
     </footer>
 </body>
 </html>
