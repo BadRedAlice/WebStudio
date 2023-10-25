@@ -133,6 +133,12 @@ header {
     padding: 20px 0;
 }
 
+.contacts-mail::before {
+    content: '';
+    display: block;
+    background-image: url(../images/);
+}
+
 .header-nav .menu-link:hover, .contacts-link:hover  {
     color: var(--accent-color);
 }
