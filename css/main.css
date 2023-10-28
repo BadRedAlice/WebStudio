@@ -208,6 +208,59 @@ header {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
+.hero-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.hero-backdrop.is-hidden {
+    visibility: none;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.hero-backdrop.is-hidden .hero-modal {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.hero-modal {
+    position: absolute;
+    width: 528px;
+    height: 581px;
+    border-radius: 4px;
+    background: #FFF;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms;
+}
+
+.close-button {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+
+.icon-close {
+    width: 18px;
+    height: 18px;
+}
+
 
 /* advantages */
 
