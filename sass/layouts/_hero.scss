@@ -1,0 +1,86 @@
+.hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 118px 0;
+
+    @media screen and (min-width: 1200px) {
+        padding: 200px 0;
+    }
+}
+
+.hero-title {
+    color: #fff;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 42px;
+    letter-spacing: 1.56px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    color: #fff;
+    background: $accent-color;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+    border: transparent;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+
+    padding: 10px 24px;
+    display: block;
+    margin: 0 auto;
+}
+
+.hero-backdrop {}
+
+.is-hidden {}
+
+.hero-modal {}
+
+.modal-content {}
+
+.close-button {}
+
+.icon-close {}
+
+.modal-title {}
+
+.modal-form {}
+
+.form-content {}
+
+.input-wrap {}
+
+.form-field {}
+
+.icon-person {}
+
+.form-icon {}
+
+.modal-tel {}
+
+.icon-phone {}
+
+.icon-mail {}
+
+.form-text {}
+
+.form-privacy {}
+
+.modal-check {}
+
+.privacy-text {}
+
+.privacy-link {}
+
+.form-button {}
+
+.modal-button {}

@@ -1,0 +1,81 @@
+.advantages {
+    padding-bottom: 60px;
+}
+
+.advantages-title.title {
+    visibility: hidden;
+}
+
+.advantages-list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+}
+
+.advantages-item {
+    @media screen and (min-width: 768px) {
+            margin: 15px;
+            width: calc((100% - 4 * 15px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+            margin: 15px;
+            width: calc((100% - 8 * 15px) / 4);
+    }
+}
+
+.advantages-item:not(:last-child) {
+
+    @media screen and (min-width: 1199px) {
+        margin-bottom: 30px;
+    }
+
+    
+}
+
+.icon-wrap {
+    border-radius: 4px;
+    background: $bg-gray;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.adv-icon {
+    width: 70px;
+    height: 70px;
+}
+
+.icon-scope {}
+
+.advantages-subtitle {
+    color: var($main-color);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
+}
+.advantages-text {
+    color: #757575;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+}
+
+.icon-watch {}
+
+.icon-graph {}
+
+.icon-astronaut {}

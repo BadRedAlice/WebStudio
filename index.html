@@ -8,17 +8,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/main.css">    
+    <link rel="stylesheet" href="css/main.min.css">    
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
             <div class="header-page">
                 <nav class="header-nav">
-                    <a class="logo" href="/"><svg class="logo-icon"><use href="images/icons/symbol-defs.svg#icon-logo"></use></svg></a>
+                    <a class="logo" href="/">
+                        <svg class="logo-icon">
+                            <use href="images/icons/symbol-defs.svg#icon-logo">
+
+                            </use>
+                        </svg>
+                    </a>
                 
                     <ul class="header-menu">
-                        <li class="menu-item active"><a class="menu-link" href="#">Студія</a></li>
+                        <li class="menu-item active"><a class="menu-link" href="index.html">Студія</a></li>
                         <li class="menu-item"><a class="menu-link" href="gallery.html">Портфоліо</a></li>
                         <li class="menu-item"><a class="menu-link" href="#">Контакти</a></li>
                     </ul>
@@ -27,7 +33,7 @@
                 <ul class="header-contacts">
                     <li class="contacts-item">
                         <a class="contacts-link contacts-mail" href="mailto:info@devstudio.com">
-                            <svg class="icon-envelope">
+                            <svg class="icon-envelope header-icon">
                                 <use href="images/icons/symbol-defs.svg#icon-envelope"></use>
                             </svg>
                             info@devstudio.com
@@ -35,12 +41,19 @@
                     </li>
                     <li class="contacts-item">
                         <a class="contacts-link contacts-tel" href="tel:+380961111111">
-                            <svg class="icon-tel">
+                            <svg class="icon-tel header-icon">
                                 <use href="images/icons/symbol-defs.svg#icon-tel"></use>
                             </svg>+38 096 111 11 11
                         </a>
                     </li>
                 </ul>
+
+                <button class="header-burger" data-menu-button>
+                    <svg class="icon-burger">
+                        <use class="burger-open" href="images/icons/symbol-defs.svg#icon-menu"></use>
+                        <use class="burger-close" href="images/icons/symbol-defs.svg#icon-cross"></use>
+                    </svg>
+                </button>
             </div>
         </div>
     </header>
@@ -49,7 +62,7 @@
             <div class="container">
                 <h1 class="hero-title">Ефективні рішення для <br> вашого бізнесу</h1>
                 <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
-                <div class="hero-backdrop is-hidden" data-modal>
+                <!-- <div class="hero-backdrop is-hidden" data-modal>
                     <div class="hero-modal">
                         <div class="modal-content">
                             <button type="button" class="close-button" data-modal-close>
@@ -111,7 +124,7 @@
                             
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
         <section class="advantages">
@@ -309,79 +322,102 @@
                 </h2>
 
                 <ul class="clients-list">
-                    <a href="#" class="clients-item yaco">
-                        <svg class="client-logo logo-yaco">
-                            <use href="images/icons/symbol-defs.svg#icon-client1"></use>
-                        </svg>
-                    </a>
-                    <a href="#" class="clients-item tagline">
-                        <svg class="client-logo logo-tagline">
-                            <use href="images/icons/symbol-defs.svg#icon-client2"></use>
-                        </svg>
-                    </a>
-                    <a href="#" class="clients-item company">
-                        <svg class="client-logo logo-company">
-                            <use href="images/icons/symbol-defs.svg#icon-client3"></use>
-                        </svg>
-                    </a>
-                    <a href="#" class="clients-item foster">
-                        <svg class="client-logo logo-foster">
-                            <use href="images/icons/symbol-defs.svg#icon-client4"></use>
-                        </svg>
-                    </a>
-                    <a href="#" class="clients-item brand">
-                        <svg class="client-logo logo-brand">
-                            <use href="images/icons/symbol-defs.svg#icon-client5"></use>
-                        </svg>
-                    </a>
-                    <a href="#" class="clients-item tagline2">
-                        <svg class="client-logo logo-tagline2">
-                            <use href="images/icons/symbol-defs.svg#icon-client6"></use>
-                        </svg>
-                    </a>
+                    <li class="clients-item yaco">
+                        <a href="#" >
+                            <svg class="client-logo logo-yaco">
+                                <use href="images/icons/symbol-defs.svg#icon-client1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    
+                    <li class="clients-item tagline">
+                        <a href="#">
+                            <svg class="client-logo logo-tagline">
+                                <use href="images/icons/symbol-defs.svg#icon-client2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients-item company">
+                        <a href="#" >
+                            <svg class="client-logo logo-company">
+                                <use href="images/icons/symbol-defs.svg#icon-client3"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients-item foster">
+                        <a href="#" >
+                            <svg class="client-logo logo-foster">
+                                <use href="images/icons/symbol-defs.svg#icon-client4"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients-item brand">
+                        <a href="#" >
+                            <svg class="client-logo logo-brand">
+                                <use href="images/icons/symbol-defs.svg#icon-client5"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients-item tagline2">
+                        <a href="#" >
+                            <svg class="client-logo logo-tagline2">
+                                <use href="images/icons/symbol-defs.svg#icon-client6"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </section>
 
     </main>
 
-    <footer>
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-info">
-                    <a class="footer-logo logo" href="/"><span>Web</span>Studio</a>
-                    <address class="footer-adress">
-                        <p class="adress-descr">м. Київ, пр-т Лесі Українки, 26</p>
-                        <a class="adress-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                        <a class="adress-item" href="tel:+380961111111">+38 096 111 11 11</a>
-                    </address>
-                </div>
-                
-                <div class="footer-social">
-                    <h3 class="social-title">приєднуйтесь</h3>
-                    <div class="social-list">
-                        <a href="" class="social-item social-inst">
-                            <svg class="social-icon footer-link">
-                                <use href="images/icons/symbol-defs.svg#icon-instagram"></use>
+                    <div class="branding-info">
+                        <a class="logo-link" href="/">
+                            <svg class="logo-icon footer-logo">
+                                <use href="images/icons/symbol-defs.svg#icon-footer-logo">
+                        
+                                </use>
                             </svg>
                         </a>
-                        <a href="" class="social-item social-twitter">
-                            <svg class="social-icon footer-link">
-                                <use href="images/icons/symbol-defs.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                        <a href="" class="social-item social-facebook">
-                            <svg class="social-icon footer-link">
-                                <use href="images/icons/symbol-defs.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                        <a href="" class="social-item social-linkedin">
-                            <svg class="social-icon footer-link">
-                                <use href="images/icons/symbol-defs.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
+                        <address class="footer-adress">
+                            <p class="adress-descr">м. Київ, пр-т Лесі Українки, 26</p>
+                            <a class="adress-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            <a class="adress-item" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </address>
+                    </div>
+
+                    <div class="footer-social">
+                        <h3 class="social-title">приєднуйтесь</h3>
+                        <div class="social-list">
+                            <a href="" class="social-item">
+                                <svg class="social-icon footer-link">
+                                    <use href="images/icons/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="social-item">
+                                <svg class="social-icon footer-link">
+                                    <use href="images/icons/symbol-defs.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="social-item">
+                                <svg class="social-icon footer-link">
+                                    <use href="images/icons/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="social-item">
+                                <svg class="social-icon footer-link">
+                                    <use href="images/icons/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
+                
+                
 
                 <div class="footer-subscribe">
                     <h3 class="subscribe-title">
@@ -389,13 +425,15 @@
                     </h3>
 
                     <form action="" class="footer-form">
-                        <input type="text" class="subscribe-field" name="subscribe-mail" placeholder="E-mail">
-                        <button type="submit" name="subscribebutton" class="subscribe-button">
-                            Підписатися
-                            <svg class="icon-send">
-                                <use href="images/icons/symbol-defs.svg#icon-send"></use>
-                            </svg>
-                        </button>
+                        <input type="email" class="subscribe-field" name="subscribe-mail" placeholder="E-mail">
+                        <div class="footer-button">
+                            <button type="submit" name="subscribebutton" class="subscribe-button">
+                                Підписатися
+                                <svg class="icon-send">
+                                    <use href="images/icons/symbol-defs.svg#icon-send"></use>
+                                </svg>
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -403,5 +441,6 @@
         
     </footer>
     <script src="js/modal.js"></script>
+    <script src="js/burger.js"></script>
 </body>
 </html>

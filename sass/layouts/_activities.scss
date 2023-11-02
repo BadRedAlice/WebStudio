@@ -1,0 +1,45 @@
+.activities {
+    padding: 94px 0;
+
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+
+.activities-title {
+    margin-bottom: 50px;
+}
+
+.title {}
+
+.activities-list {
+    display: flex;
+    justify-content: center;
+    margin: -15px;
+}
+
+.activities-item {
+    position: relative;
+    margin: 15px;
+}
+
+.activities-image {
+    width: 100%;
+    height: 100%;
+}
+
+.activities-text {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
+    padding: 26px 0;
+    background: rgba(47, 48, 58, 0.80);
+
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
